@@ -1,5 +1,6 @@
 import numpy as np
 
+
 class Perceptron:
     def __init__(self, dimension, max_iter, learning_rate):
         self.dimension = dimension

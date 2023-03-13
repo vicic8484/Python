@@ -1,9 +1,11 @@
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-from perceptron import Perceptron
+from sklearn.metrics import (accuracy_score, confusion_matrix, f1_score,
+                             precision_score, recall_score)
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, recall_score, f1_score
+
+from perceptron import Perceptron
 
 df=pd.read_csv("iris.csv")
 #recuperationdes100premiereslignesetdescolonnes0et2
