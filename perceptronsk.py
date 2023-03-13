@@ -8,8 +8,8 @@ import time
 from pickle import dump, load
 
 df=pd.read_csv("iris.csv")
-X_data=df.iloc[0:,[0,2]].values
-y_data=df.iloc[0:,4].values
+X_data=df.iloc[0:100,[0,2]].values
+y_data=df.iloc[0:100,4].values
 y_data=np.where(y_data=="setosa",-1,1)
 X_data_train, X_data_test, y_data_train, y_data_test = train_test_split(X_data, y_data, test_size=0.2, random_state=0)
 
